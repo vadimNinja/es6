@@ -1,0 +1,7 @@
+# NodeJS specific #e/
+node_modules/
+
+
+
+# ignore all logs
+*.log

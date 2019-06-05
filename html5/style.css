@@ -1,0 +1,34 @@
+p.red{
+    color: #ff0000;
+}
+
+.dark{
+    color: #000080;
+}
+
+/*.fontclass{*/
+    /*font-family: Arial;*/
+    /*font-size: 17px;*/
+    /*font-weight: bold;*/
+    /*font-style: italic;*/
+/*}*/
+
+.fontclass{ font: italic bold 17px Arial;
+}
+
+.textclass{
+    text-align: center;
+    line-height: 1.7;
+    text-decoration: underline;
+    color: #ff0000;
+    font-family: Arial;
+}
+
+.wstyle{
+    max-width: 900px;
+    min-width: 300px;
+}
+
+.spstyle{
+    text-decoration: line-through;
+}

@@ -27,6 +27,14 @@ ford.color = 'red';
 console.log(ford);
 console.log(bmw);
 
+var bike = {
+    name: 'Bike',
+    year: 2017,
+    person: {
+
+    }
+};
+console.log(car);
 
 // var ford = Object.create({
 //     calculatedDistancePerYear: function () {

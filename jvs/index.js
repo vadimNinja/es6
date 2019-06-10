@@ -1,13 +1,22 @@
-// var car = {
-//     name: 'Ford',
-//     year: 2015,
-//     person: {
-//
-//     }
-// };
-// console.log(car);
-//
-//
+var car = {
+    name: 'Ford',
+    year: 2015,
+    person: {
+
+    }
+};
+console.log(car);
+
+var machine = {
+    name: 'Ford',
+    year: 2015,
+    person: {
+
+    }
+};
+console.log(car);
+
+
 // function Car(name, year) {
 //     this.name = name;
 //     this.year = year

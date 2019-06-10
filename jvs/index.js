@@ -1,31 +1,40 @@
-var car = {
-    name: 'Ford',
-    year: 2015,
-    person: {
+// var car = {
+//     name: 'Ford',
+//     year: 2015,
+//     person: {
+//
+//     }
+// };
+// console.log(car);
+//
+//
+// function Car(name, year) {
+//     this.name = name;
+//     this.year = year
+// }
+//
+// Car.prototype.getAge = function () {
+//     return new Date().getFullYear() - this.year
+// };
+//
+// Car.prototype.color = 'black';
+//
+// var ford = new Car('Ford', 2015);
+// var bmw = new Car('BMW', 2017);
+//
+// ford.color = 'red';
+//
+// console.log(ford);
+// console.log(bmw);
 
-    }
-};
-console.log(car);
+
+console.log('Hello');
+console.log('Hello Vadim!');
+console.log('Hello World!');
 
 
-function Car(name, year) {
-    this.name = name;
-    this.year = year
-}
 
-Car.prototype.getAge = function () {
-    return new Date().getFullYear() - this.year
-};
 
-Car.prototype.color = 'black';
-
-var ford = new Car('Ford', 2015);
-var bmw = new Car('BMW', 2017);
-
-ford.color = 'red';
-
-console.log(ford);
-console.log(bmw);
 
 
 // var ford = Object.create({

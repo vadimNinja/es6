@@ -24,7 +24,6 @@ var bike = {
     name: 'Bike',
     year: 2017,
     person: {
-
     }
 };
 console.log(car);

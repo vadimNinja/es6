@@ -1,92 +1,85 @@
-var car = {
-    name: 'Ford',
-    year: 2015,
-    person: {
-
-    }
-};
-console.log(car);
-
-
-function Car(name, year) {
-    this.name = name;
-    this.year = year
-}
-
-Car.prototype.getAge = function () {
-    return new Date().getFullYear() - this.year
-};
-
-
-
-
-var bike = {
-    name: 'Bike',
-    year: 2017,
-    person: {
-    }
-};
-console.log(car);
-
-var ford = Object.create({
-    calculatedDistancePerYear: function () {
-        Object.defineProperty(this, 'distancePerYear', {
-            value: Math.ceil(this.distance / this.age),
-            enumerable: false,
-            writable: false,
-            configurable: false
-        })
-    }
-}, {
-    name: {
-        value: 'Ford',
-        enumerable: true,
-        writable: false,
-        configurable: false
-    },
-    model: {
-        value: 'Focus',
-        enumerable: true,
-        writable: false,
-        configurable: false
-    },
-    year: {
-        value: 2015,
-        enumerable: true,
-        writable: false,
-        configurable: false
-    },
-    distance: {
-        value: 12050,
-        enumerable: true,
-        writable: true,
-        configurable: false
-    },
-    age: {
-        enumerable: true,
-        get: function () {
-            return new Date().getFullYear() - this.year
-        },
-        set: function () {
-
-        }
-    }
-});
-
-ford.calculatedDistancePerYear();
-
-for (var key in ford) {
-    if (ford.hasOwnProperty(key)) {
-        console.log(key, ford[key])
-    }
-}
-
-console.log(car);
-console.log(car);
-console.log(car);
-console.log(car);
-console.log(car);
-console.log(car);
+// var car = {
+//     name: 'Ford',
+//     year: 2015,
+//     person: {
+//
+//     }
+// };
+// console.log(car);
+//
+//
+// function Car(name, year) {
+//     this.name = name;
+//     this.year = year
+// }
+//
+// Car.prototype.getAge = function () {
+//     return new Date().getFullYear() - this.year
+// };
+//
+//
+//
+//
+// var bike = {
+//     name: 'Bike',
+//     year: 2017,
+//     person: {
+//     }
+// };
+// console.log(car);
+//
+// var ford = Object.create({
+//     calculatedDistancePerYear: function () {
+//         Object.defineProperty(this, 'distancePerYear', {
+//             value: Math.ceil(this.distance / this.age),
+//             enumerable: false,
+//             writable: false,
+//             configurable: false
+//         })
+//     }
+// }, {
+//     name: {
+//         value: 'Ford',
+//         enumerable: true,
+//         writable: false,
+//         configurable: false
+//     },
+//     model: {
+//         value: 'Focus',
+//         enumerable: true,
+//         writable: false,
+//         configurable: false
+//     },
+//     year: {
+//         value: 2015,
+//         enumerable: true,
+//         writable: false,
+//         configurable: false
+//     },
+//     distance: {
+//         value: 12050,
+//         enumerable: true,
+//         writable: true,
+//         configurable: false
+//     },
+//     age: {
+//         enumerable: true,
+//         get: function () {
+//             return new Date().getFullYear() - this.year
+//         },
+//         set: function () {
+//
+//         }
+//     }
+// });
+//
+// ford.calculatedDistancePerYear();
+//
+// for (var key in ford) {
+//     if (ford.hasOwnProperty(key)) {
+//         console.log(key, ford[key])
+//     }
+// }
 
 // var person = {
 //     name: 'Max',
